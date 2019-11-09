@@ -1,67 +1,99 @@
-*{
-   margin: 0;padding: 0;font-family: 'Source Sans Pro', sans-serif;list-style: none;text-decoration: none;color: rgb(133, 4, 133);
-}
-a:hover{
+* {
+   margin: 0;
+   padding: 0;
+   font-family: 'Source Sans Pro', sans-serif;
+   list-style: none;
    text-decoration: none;
    color: rgb(133, 4, 133);
 }
-header{
+
+a:hover {
+   text-decoration: none;
+   color: rgb(133, 4, 133);
+}
+
+header {
    max-height: 100vh;
 }
-.header-nav{
+
+.header-nav {
    padding: 15px 0;
 }
-.header-nav__phone{
+
+.header-nav__phone {
    font-size: 20px;
    color: rgb(133, 4, 133);
 }
-.header-nav__social-icons{
+
+.header-nav__social-icons {
    margin-bottom: 0 !important;
 }
-.header-nav__social-icons a{
+
+.header-nav__social-icons a {
    font-size: 26px;
    margin-left: 25px;
    color: rgb(133, 4, 133);
 }
-.header-content{
+
+.header-content {
    height: 92vh;
    background: url(../images/header.png)no-repeat center center /cover;
 }
-.about-us,.prioritet,.how-work{
+
+.header-content h1 {
+   color: rgb(46, 0, 46);
+   font-weight: bold;
+   font-size: 70px;
+}
+
+.about-us,
+.prioritet,
+.how-work {
    background: rgb(133, 4, 133);
 }
-section h2::after{
+
+section h2::after {
    content: '';
    display: block;
    width: 50%;
    height: 3px;
    margin: 35px auto;
-   background: linear-gradient(to left, transparent,rgb(245, 15, 245),transparent);
+   background: linear-gradient(to left, transparent, rgb(245, 15, 245), transparent);
 }
-.about-us__title,.prioritet__title,.how-work__title{
+
+.about-us__title,
+.prioritet__title,
+.how-work__title {
    font-size: 45px;
    color: white;
 }
-.flows__title,.gallery__title,.portfolio__title{
+
+.flows__title,
+.gallery__title,
+.portfolio__title {
    font-size: 45px;
    color: rgb(133, 4, 133);
 }
-.about-description,.prioritet__description,.how-description{
+
+.about-description,
+.prioritet__description,
+.how-description {
    font-size: 20px;
    color: white;
    margin-bottom: 50px;
 }
-.phone-you{
+
+.phone-you {
    display: inline-block;
    font-size: 22px;
    padding: 10px 25px;
    border-radius: 15px;
-   background: linear-gradient(45deg,rgb(245, 15, 245),rgb(179, 8, 179));
+   background: linear-gradient(45deg, rgb(245, 15, 245), rgb(179, 8, 179));
    color: rgb(128, 230, 248);
    box-shadow: 0 0 20px rgba(192, 190, 190, 0.472);
 }
 
-.card-image{
+.card-image {
    height: 170px;
    width: 170px;
    display: flex;
@@ -71,9 +103,11 @@ section h2::after{
    border: 5px solid rgb(133, 4, 133);
    margin: 0 auto 30px;
 }
-section{
+
+section {
    padding: 70px 0;
 }
+
 /* .carousel-inner{
    height: 700px;
 }
@@ -82,3 +116,13 @@ section{
    width: 100% !important;
    object-fit: cover;
 } */
+
+@media (max-width: 576px) {
+   .header-content h1 {
+      font-size: 40px;
+      width: 100%;
+   }
+   .header-nav .container{
+      flex-direction: column;
+   }
+}
