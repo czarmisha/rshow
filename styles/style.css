@@ -119,6 +119,13 @@ section {
 #header-carousel{
    display: none;
 }
+.gallery .carousel-item img{
+   transform: rotate(90deg);
+}
+.carousel-control-prev-icon,.carousel-control-next-icon{
+   background: none;
+   font-size: 30px;
+}
 
 @media (max-width: 576px) {
    .header-content h1 {
@@ -128,7 +135,7 @@ section {
    .header-nav .container{
       flex-direction: column;
    }
-   .header-content{
+   /* .header-content{
       background: none;
       height: auto;
    }
@@ -137,7 +144,7 @@ section {
    }
    #header-carousel{
       display: block;
-   }
+   } */
 }
 @media (max-width: 1200px) { 
    .header-content{
