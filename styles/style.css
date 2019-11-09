@@ -13,7 +13,7 @@ a:hover {
 }
 
 header {
-   max-height: 100vh;
+   /* max-height: 100vh; */
 }
 
 .header-nav {
@@ -116,6 +116,9 @@ section {
    width: 100% !important;
    object-fit: cover;
 } */
+#header-carousel{
+   display: none;
+}
 
 @media (max-width: 576px) {
    .header-content h1 {
@@ -125,4 +128,27 @@ section {
    .header-nav .container{
       flex-direction: column;
    }
+   .header-content{
+      background: none;
+      height: auto;
+   }
+   .adaptive{
+      display: none !important;
+   }
+   #header-carousel{
+      display: block;
+   }
 }
+@media (max-width: 1200px) { 
+   .header-content{
+      background: none;
+      height: auto;
+   }
+   .adaptive{
+      display: none !important;
+   }
+   #header-carousel{
+      display: block;
+   }
+
+ }
