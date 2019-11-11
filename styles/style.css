@@ -32,6 +32,9 @@ a:hover {
    font-size: 20px;
    color: rgb(133, 4, 133);
 }
+.header-nav__phone span{
+   margin-left: 8px;
+}
 
 .header-nav__social-icons {
    margin-bottom: 0 !important;
@@ -207,6 +210,7 @@ section {
 .card{
    position: relative;
    overflow: hidden;
+   margin-bottom: 30px;
 }
  .portfolio-card-image{
     position: absolute;
@@ -218,8 +222,9 @@ section {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background: rgba(255, 255, 255, 0.432);
+    background: rgba(255, 255, 255, 0.767);
     transition: 500ms;
+    padding: 30px;
  }
  .card img{
     width: 100%;
@@ -228,4 +233,13 @@ section {
  .card:hover .portfolio-card-image{
     top: 0;
     bottom: 0;
+ }
+ .footer-copyright{
+    background: rgb(133, 4, 133);
+    padding: 17px 0;
+ }
+ .footer-copyright p{
+    text-align: center;
+    color: white;
+    margin: 0;
  }
