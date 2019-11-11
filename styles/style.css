@@ -1,3 +1,4 @@
+@import 'bootstrap.css';
 * {
    margin: 0;
    padding: 0;
@@ -7,19 +8,26 @@
    color: rgb(133, 4, 133);
 }
 
+
 a:hover {
    text-decoration: none;
    color: rgb(133, 4, 133);
 }
 
-header {
-   /* max-height: 100vh; */
-}
 
 .header-nav {
    padding: 15px 0;
+    box-shadow: 0 0 8px 5px rgba(58, 31, 12, 0.65);
+   position: relative;
+   z-index: 1;
 }
-
+.header-nav__logo{
+   width: 70px;
+}
+.header-nav__logo img{
+   width: 100%;
+   height: auto;
+}
 .header-nav__phone {
    font-size: 20px;
    color: rgb(133, 4, 133);
@@ -108,6 +116,7 @@ section {
    padding: 70px 0;
 }
 
+
 /* .carousel-inner{
    height: 700px;
 }
@@ -119,12 +128,38 @@ section {
 #header-carousel{
    display: none;
 }
-.gallery .carousel-item img{
-   transform: rotate(90deg);
-}
-.carousel-control-prev-icon,.carousel-control-next-icon{
+ #slider-gallery .carousel-control-prev-icon,
+ #slider-gallery .carousel-control-next-icon{
    background: none;
-   font-size: 30px;
+   font-size: 35px;
+}
+.slider-controls{
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+ #slider-gallery .carousel-control-prev,
+ #slider-gallery .carousel-control-next{
+   /* right: 100% !important; */
+   left: auto;
+   right: auto;
+   position: relative;
+   width: auto;
+   height: min-content;
+   display: block;
+   align-items: center;
+}
+.carousel-indicators{
+   position: relative;
+   margin: 0;
+}
+.carousel-indicators li{
+   background: rebeccapurple;
+   width: 15px;
+   height: 15px;
+   border-radius: 50%;
+   padding: 0 !important;
+   border: none;
 }
 
 @media (max-width: 576px) {
@@ -158,4 +193,39 @@ section {
       display: block;
    }
 
+ }
+
+ .carousel-item img{
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+ }
+ #slider-gallery{
+    max-width: 500px;
+    margin: 0 auto;
+ }
+.card{
+   position: relative;
+   overflow: hidden;
+}
+ .portfolio-card-image{
+    position: absolute;
+    /* top: 0; */
+    left: 0;
+    right: 0;
+    bottom: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: rgba(255, 255, 255, 0.432);
+    transition: 500ms;
+ }
+ .card img{
+    width: 100%;
+    height: auto;
+ }
+ .card:hover .portfolio-card-image{
+    top: 0;
+    bottom: 0;
  }
